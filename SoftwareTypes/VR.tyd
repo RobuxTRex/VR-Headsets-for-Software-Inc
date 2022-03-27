@@ -1,0 +1,202 @@
+SoftwareType
+	{
+	Name			"VR Headset"
+	Description		"Making VR Headsets is a great way to injure your users!"
+	Unlock          1994
+	Random			0.75
+	Popularity		1.25
+	Retention		72
+	IdealPrice		215
+	OptimalDevTime	47.5
+	SubmarketNames	[ "Safety"; "Quality"; "Ease of Use" ]
+	Iterative		0.75
+	NameGenerator	VRHeadset
+	OSSupport		[ Computer ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		Display
+			Spec		System
+			Description "No VR Headset is one without a Display!"
+			DevTime		2
+			CodeArt		0.5
+			Submarkets	[ 0; 1; 0.25 ]
+			Features
+				[
+					{
+					Name		"480p"
+					Description "Support content in 480p!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0.1; 0 ]
+					}
+					{
+					Name		"10FPS"
+					Description "Ugh, nobody likes a laggy experience!"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0.1; 0 ]
+					}
+					{
+					Name		"600p"
+					Description "Increase image definition by 120 pixels!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Unlock      1999
+					Submarkets	[ 0; 0.1; 0.2 ]
+					}
+					{
+					Name		"20FPS"
+					Description "Well, at least it's better than nothing... and 10FPS."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Unlock      1999
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"HD"
+					Description "Finally! Content displayed in 720p can be produced and viewed!"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Unlock      2003
+					Submarkets	[ 0; 0.3; 0.2 ]
+					}
+					{
+					Name		"30FPS"
+					Description "Users of this VR Headset can finally view content in, uhh... decent frames per second!"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Unlock      2007
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"Full HD"
+					Description "Quality up-to today's day-to-day standars - in 1080p!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Unlock      2007
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"60FPS"
+					Description "Why? I don't know but okay."
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Unlock      2013
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"1440p"
+					Description "1440p Displays are usually unnecessary but are still cool..."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Unlock      2013
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"Ultra HD"
+					Description "This feature is useless... but people still like it anyways!"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Unlock      2017
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+					{
+					Name		"8K"
+					Description "What? no"
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Unlock      2024
+					Submarkets	[ 0; 0.2; 0.1 ]
+					}
+				]
+			}
+			{
+			Name			Hardware
+			Spec			3D
+			Description 	"You NEED hardware for EVERYTHING!"
+			DevTime			3
+			CodeArt			1
+			Dependencies	"2D Editor"
+			Submarkets		[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Low-Tier Hardware"
+					Description "Reduces peformance terribly."
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 0 ]
+					}
+					{
+					Name		"Mid-Tier Hardware"
+					Description "Honestly, at least it is something."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Unlock      1999
+					Submarkets	[ 0; 0.2; 0.2 ]
+					}
+					{
+					Name		"Best-Tier Hardware"
+					Description "The best of the best hardware only for great headsets!"
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Unlock      2010
+					Submarkets	[ 0; 0.4; 0.2 ]
+					}
+					{
+					Name		"Overclocked Hardware"
+					Description "Overclock your users' hardware too increase performance."
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Unlock      2005
+					Submarkets	[ 0; 0.5; 0.5 ]
+					}
+				]
+			}
+			{
+			Name		Safety Precautions
+			Spec		Network
+			Optional	True
+			Description "Protect your users from Physical Safety Hazards (like running into a wall)."
+			DevTime		3
+			CodeArt		0.5
+			Submarkets	[ 1; 0; 0 ]
+			Features
+				[
+					{
+					Name		"Cameras"
+					Description "You shouldn't be running into walls now!"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Distance Sensors"
+					Description "BEEP! BEEP! SHARP POINTY THING 5CM AWAY FROM NOSE"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+		]
+	}
