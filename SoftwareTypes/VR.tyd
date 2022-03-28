@@ -1,4 +1,4 @@
-SoftwareType
+ SoftwareType
 	{
 	Name			"VR Headset"
 	Description		"Making VR Headsets is a great way to injure your users!"
@@ -78,7 +78,7 @@ SoftwareType
 					}
 					{
 					Name		"Full HD"
-					Description "Quality up-to today's day-to-day standars - in 1080p!"
+					Description "Quality up-to today's day-to-day standards - in 1080p!"
 					DevTime		4
 					Level		2
 					CodeArt		1
@@ -124,55 +124,8 @@ SoftwareType
 				]
 			}
 			{
-			Name			Hardware
-			Spec			3D
-			Description 	"You NEED hardware for EVERYTHING!"
-			DevTime			3
-			CodeArt			1
-			Dependencies	"2D Editor"
-			Submarkets		[ 0; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Low-Tier Hardware"
-					Description "Reduces peformance terribly."
-					DevTime		1
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 0 ]
-					}
-					{
-					Name		"Mid-Tier Hardware"
-					Description "Honestly, at least it is something."
-					DevTime		2
-					Level		2
-					CodeArt		1
-					Unlock      1999
-					Submarkets	[ 0; 0.2; 0.2 ]
-					}
-					{
-					Name		"Best-Tier Hardware"
-					Description "The best of the best hardware only for great headsets!"
-					DevTime		3
-					Level		3
-					CodeArt		1
-					Unlock      2010
-					Submarkets	[ 0; 0.4; 0.2 ]
-					}
-					{
-					Name		"Overclocked Hardware"
-					Description "Overclock your users' hardware too increase performance."
-					DevTime		3
-					Level		3
-					CodeArt		1
-					Unlock      2005
-					Submarkets	[ 0; 0.5; 0.5 ]
-					}
-				]
-			}
-			{
 			Name		Safety Precautions
-			Spec		Network
+			Spec		3D
 			Optional	True
 			Description "Protect your users from Physical Safety Hazards (like running into a wall)."
 			DevTime		3
@@ -185,7 +138,7 @@ SoftwareType
 					Description "You shouldn't be running into walls now!"
 					DevTime		1
 					Level		1
-					CodeArt		1
+					CodeArt		0.5
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
@@ -194,9 +147,180 @@ SoftwareType
 					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 0; 1 ]
+					Submarkets	[ 1; 0; 0.2 ]
+					}
+					{
+					Name		"Screen Time"
+					Description "Oh no! You've been playing Seat Slayer for 12 hours now!"
+					DevTime		2
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"TV"
+					Description "Link your device to your TV!"
+					DevTime		2
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 0.2; 1; 0 ]
 					}
 				]
 			}
+			{
+			Name		Networking
+			Spec		Network
+			Optional	True
+			Description "Users can play on LAN or the Internet with other fellow users!"
+			Unlock      2000
+			DevTime		3
+			CodeArt		0.5
+			Submarkets	[ 0; 2; 1 ]
+			Features
+				[
+					{
+					Name		"Local LAN"
+					Description "LAN allows users to play with others on the same network!"
+					DevTime		1
+					Level		1
+					Unlock      2000
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name        "Wi-Fi Connection"
+					Description "Connect to your Router with blazing-fast internet speeds!"
+					DevTime		3
+					Level		2
+					Unlock      2010
+					CodeArt		1
+					Submarkets	[ 0; 1; 0.2 ]
+					}
+					{
+					Name		"Global Internet Connection"
+					Description "Connect with users all over the globe! Only works when connected to an internet device."
+					DevTime		2
+					Level		1
+					Unlock      2000
+					CodeArt		0.5
+					Submarkets	[ 0; 0.5; 0 ]
+					}
+					{
+					Name		"Dial-Up"
+					Description "Connect with users all over the globe with a Dial-Up internet connection!"
+					DevTime		2
+					Level		1
+					Unlock      2000
+					CodeArt		0.5
+					Submarkets	[ 0; 0.4; 0 ]
+					}
+					{
+					Name		"Modem"
+					Description "Allow users to use their modem to access the internet."
+					DevTime		2
+					Level		1
+					Unlock      2000
+					CodeArt		0.5
+					Submarkets	[ 0; 0.25; 0 ]
+					}
+					{
+					Name		"Ethernet"
+					Description "Users can connect to the internet using a WIC (Wired Internet Connection)"
+					DevTime		2
+					Level		1
+					Unlock      2005
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+				Name		Security
+				Spec		2D
+				Optional	True
+				Description "Security is key! Protect your users from hackers and other threats."
+				DevTime		3
+				CodeArt		0.5
+				Submarkets	[ 1; 0; 0 ]
+				Features
+					[
+						{
+						Name		"Passwords"
+						Description "Nobody can hack into your VR Headset now!"
+						DevTime		1
+						Level		1
+						CodeArt		0.5
+						Submarkets	[ 1; 0; 0 ]
+						}
+						{
+						Name        "Antivirus"
+						Description "Add an antivirus to your VR Headset!"
+						DevTime		3
+						Level		2
+						CodeArt		1
+						Submarkets	[ 1; 0; 0.2 ]
+						}
+						{
+						Name		"Firewall"
+						Description "No virus gonna' get through now!"
+						DevTime		2
+						Level		1
+						CodeArt		0.5
+						Submarkets	[ 1; 0; 0 ]
+						}
+						{
+						Name		"Biometrics"
+						Description "Face Recognition will be great for people who can't remember their password!"
+						DevTime		2
+						Level		1
+						CodeArt		0.5
+						Submarkets	[ 1; 0; 0 ]
+						}
+					]
+				}
+				{
+					Name		Extra
+					Spec		Audio
+					Optional	True
+					Description "Extra features are key! Add extra features to your VR Headset!"
+					DevTime		3
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 1 ]
+					Features
+						[
+							{
+							Name		"Microphone & Headphone Support" 
+							Description "Add a microphone to your VR Headset with a built-in jack!"
+							DevTime		1
+							Level		1
+							CodeArt		0.5
+							Submarkets	[ 0; 0.5; 0.2 ]
+							}
+							{
+							Name        "Operating System"
+							Description "Add an actual GUI-Based OS to your VR Headset, making it more user-friendly!"
+							DevTime		3
+							Level		3
+							CodeArt		1
+							Submarkets	[ 0; 0; 2 ]
+							}
+							{
+							Name		"Audio Support"
+							Description "Headset built-in to your VR Headset, making sound more natural!"
+							DevTime		2
+							Level		2
+							CodeArt		0.5
+							Submarkets	[ 0; 1; 1 ]
+							}
+							{
+							Name		"Credits"
+							Description "Add credits to your Headset, making users feel better about your Company."
+							DevTime		2
+							Level		3
+							CodeArt		0.5
+							Submarkets	[ 1; 0; 0 ]
+							}
+						]
+					}
 		]
 	}
